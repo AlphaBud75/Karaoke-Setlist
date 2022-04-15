@@ -35,24 +35,24 @@ const players = {
     "do": {
         name: "@doumoku",
         table: 2,
-        Score_round1game1: 0,
-        Score_round1game2: 0,
+        Score_round1game1: 38700,
+        Score_round1game2: 8700,
         Score_round2: 0,
         Score_round3: 0
     },
     "mo": {
         name: "@Moojo",
         table: 2,
-        Score_round1game1: 0,
-        Score_round1game2: 0,
+        Score_round1game1: 35400,
+        Score_round1game2: 13700,
         Score_round2: 0,
         Score_round3: 0
     },
     "sn": {
         name: "@SnowBunny",
         table: 2,
-        Score_round1game1: 0,
-        Score_round1game2: 0,
+        Score_round1game1: 30700,
+        Score_round1game2: 41900,
         Score_round2: 0,
         Score_round3: 0
     },
@@ -60,7 +60,7 @@ const players = {
         name: "@Zisos",
         table: 2,
         Score_round1game1: 0,
-        Score_round1game2: 0,
+        Score_round1game2: 35700,
         Score_round2: 0,
         Score_round3: 0
     },

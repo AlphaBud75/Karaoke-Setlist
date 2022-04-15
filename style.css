@@ -17,3 +17,7 @@ tbody,
 td {
     border: 1px solid green;
 }
+
+img {
+    width: 400px;
+}
