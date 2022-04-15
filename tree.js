@@ -1,5 +1,8 @@
 var player_keys = Object.keys(players);
-var table_winner_keys = [];
+var round1_table_winner_keys = new Set();
+var round1_score_winner_keys = new Set(player_keys);
+var round1_sums = [-999999];
+
 
 let key_idx = 0;
 
@@ -10,9 +13,9 @@ function pkey() { //return_player_name_byOrder
 
 var mytable_r1_direct = "<table>";
 
-for (let table = 0; table < 9; table++) {
+for (let i_table = 0; i_table < 9; i_table++) {
     mytable_r1_direct += "<TH>Profil Pic</TH>";
-    mytable_r1_direct += "<TH>Table " + (table + 1) + "</TH>";
+    mytable_r1_direct += "<TH>Table " + (i_table + 1) + "</TH>";
     mytable_r1_direct += "<TH>Round1 Game1 Score </TH>";
     mytable_r1_direct += "<TH>Round1 Game2 Score </TH>";
     mytable_r1_direct += "<TH> Sum </TH>";
@@ -30,14 +33,16 @@ for (let table = 0; table < 9; table++) {
             qualifier_name_key = Splayer_key0;
         }
     }
-    qualifier_name_key != "" && table_winner_keys.push(qualifier_name_key)
+    qualifier_name_key != "" && round1_table_winner_keys.add(qualifier_name_key), round1_score_winner_keys.delete(qualifier_name_key);
     key_idx -= 4;
 
-    for (let i = 0; i < 4; i++) {
+    for (let i_player = 0; i_player < 4; i_player++) {
         let Splayer_key = pkey();
         let game1_2sum = (players[Splayer_key].Score_round1game1 + players[Splayer_key].Score_round1game2);
+        console.log(typeof game1_2sum);
+        round1_sums.push(parseFloat(game1_2sum));
 
-        if (i == 1) {
+        if (i_player == 1) {
 
             if (qualifier_name_key == "") {
                 mytable_r1_direct += " <td rowspan = \"4\">" + "Awaiting Result" + "</td>";
@@ -45,8 +50,8 @@ for (let table = 0; table < 9; table++) {
             } else {
                 mytable_r1_direct += " <td rowspan = \"4\">" + players[qualifier_name_key].name.substring(1) + "</td>";
                 mytable_r1_direct += " <td rowspan = \"4\">\
-                <img class=\"screenshot\" src = \"screenshots/r1t" + (table + 1) + "g1.png\"><br>\
-                <img class=\"screenshot\"  src = \"screenshots/r1t" + (table + 1) + "g2.png\"></td>";
+                <img class=\"screenshot\" src = \"screenshots/r1t" + (i_table + 1) + "g1.png\"><br>\
+                <img class=\"screenshot\"  src = \"screenshots/r1t" + (i_table + 1) + "g2.png\"></td>";
             }
         }
 
@@ -78,21 +83,52 @@ mytable_r1_direct += "</table>";
 document.getElementById("round1R").innerHTML = mytable_r1_direct;
 
 
-var mytable_r1Q_direct = "<table><tr>";
-for (let idx = 0; idx < table_winner_keys.length; idx++) {
+
+var top_n = 10;
+// console.log(round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse());
+round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse();
+// console.log(round1_sums.slice(0, 9));
+while (round1_sums[top_n] == round1_sums[top_n + 1]) {
+    top_n += 1
+}
+console.log(round1_sums.slice(0, top_n));
+nineth = round1_sums.slice(0, top_n).slice(-1);
+console.log(nineth);
+// console.log(round1_score_winner_keys);
+
+
+console.log(round1_table_winner_keys);
+for (let k of round1_table_winner_keys) {
+    console.log((players[k].Score_round1game1 + players[k].Score_round1game2));
+}
+var mytable_r1Q_direct = "<table><th colspan = \"9\">Table Winners (9)</th><tr>";
+let idx = 1;
+for (let rtwk of round1_table_winner_keys) {
     mytable_r1Q_direct += "<Td>";
-    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[table_winner_keys[idx]].name + ".png\">";
+    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[rtwk].name + ".png\">";
     mytable_r1Q_direct += "<br><b>";
-    mytable_r1Q_direct += players[table_winner_keys[idx]].name.substring(1);;
-    mytable_r1Q_direct += "</b><br>Table " + (1 + idx);
+    mytable_r1Q_direct += players[rtwk].name.substring(1);;
+    mytable_r1Q_direct += "</b><br>Table " + players[rtwk].round1_table;
     mytable_r1Q_direct += "<br><b>";
-    mytable_r1Q_direct += (players[table_winner_keys[idx]].Score_round1game1 + players[table_winner_keys[idx]].Score_round1game2);
+    mytable_r1Q_direct += (players[rtwk].Score_round1game1 + players[rtwk].Score_round1game2);
     mytable_r1Q_direct += "</b></Td>";
 }
-mytable_r1Q_direct += "</tr><tr><td></td>";
-for (let idx = 10; idx <= 16; idx++) {
-    mytable_r1Q_direct += "<Td>Top Score ";
-    mytable_r1Q_direct += "<br>Winner" + idx + "</Td>";
+mytable_r1Q_direct += "</tr><th colspan = \"9\">Score Winners (7) (live update)</th><tr><td></td>";
+for (let k of round1_score_winner_keys) {
+    players[k].Score_round1game1 + players[k].Score_round1game2 < nineth && round1_score_winner_keys.delete(k);
+}
+console.log(round1_score_winner_keys);
+for (let rswk of round1_score_winner_keys) {
+    console.log((players[rswk].Score_round1game1 + players[rswk].Score_round1game2));
+    mytable_r1Q_direct += "<Td>";
+    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[rswk].name + ".png\">";
+    mytable_r1Q_direct += "<br><b>";
+    mytable_r1Q_direct += players[rswk].name.substring(1);;
+    mytable_r1Q_direct += "</b><br>Table " + players[rswk].round1_table;
+    mytable_r1Q_direct += "<br><b>";
+    mytable_r1Q_direct += (players[rswk].Score_round1game1 + players[rswk].Score_round1game2);
+    mytable_r1Q_direct += "</b></Td>";
+    idx += 1;
 }
 mytable_r1Q_direct += "<td></td></tr></table>";
 document.getElementById("round2Q").innerHTML = mytable_r1Q_direct;
@@ -100,8 +136,22 @@ document.getElementById("round2Q").innerHTML = mytable_r1Q_direct;
 
 
 
-let avatars = "";
-for (let key in players) {
-    avatars += "?avatar " + (players[key].name) + "\n";
-}
-// console.log(avatars)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let avatars = "";
+// for (let key in players) {
+//     avatars += "?avatar " + (players[key].name) + "\n";
+// }
+// // console.log(avatars)

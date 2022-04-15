@@ -19,6 +19,7 @@ th,
 tr,
 tbody,
 td {
+    text-align: center;
     border: 1px solid green;
 }
 
@@ -42,7 +43,7 @@ div.table_container {
 
 div#round2Q {
     margin: auto;
-    width: 900px;
+    width: 954px;
 }
 
 .header img {
