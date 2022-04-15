@@ -24,11 +24,17 @@ for (let table = 0; table < 9; table++) {
         if (i == 1) {
             mytable_r1_direct += " <td rowspan = \"4\">qualifier name</td>";
             mytable_r1_direct += " <td rowspan = \"4\">\
-            <img src = \"r1t" + (table + 1) + "g1.png\">\
-            <img src = \"r1t" + (table + 1) + "g2.png\"></td>";
+            <img class=\"screenshot\" src = \"screenshots/r1t" + (table + 1) + "g1.png\">\
+            <img class=\"screenshot\"  src = \"screenshots/r1t" + (table + 1) + "g2.png\"></td>";
         }
         mytable_r1_direct += "<tr>" +
-            "<td>" + "pfp" + "</td>" +
+            // "<td>" + "?avatar " + players[Splayer_key].name + "</td>" +
+            "<td>\
+            <img class=\"avators\"  src = \"avators/" +
+            players[Splayer_key].name + ".png\">\
+            <img class=\"avators\"  src = \"avators/" +
+            players[Splayer_key].name + ".gif\">\
+            </td>" +
             "<td>" + players[Splayer_key].name + "</td>" +
             " <td>" + players[Splayer_key].Score_round1game1 + "</td>" +
             " <td>" + players[Splayer_key].Score_round1game2 + "</td>" +
@@ -39,3 +45,10 @@ for (let table = 0; table < 9; table++) {
 
 mytable_r1_direct += "</table>";
 document.getElementById("round1").innerHTML = mytable_r1_direct;
+
+
+let avatars = "";
+for (let key in players) {
+    avatars += "?avatar " + (players[key].name) + "\n";
+}
+// console.log(avatars)

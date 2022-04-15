@@ -18,6 +18,10 @@ td {
     border: 1px solid green;
 }
 
-img {
+img.screenshot {
     width: 400px;
+}
+
+img.avators {
+    width: 100px;
 }
