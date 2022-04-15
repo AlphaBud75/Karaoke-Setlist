@@ -1,4 +1,5 @@
-player_keys = Object.keys(players);
+var player_keys = Object.keys(players);
+var table_winner_keys = [];
 
 let key_idx = 0;
 
@@ -29,6 +30,7 @@ for (let table = 0; table < 9; table++) {
             qualifier_name_key = Splayer_key0;
         }
     }
+    qualifier_name_key != "" && table_winner_keys.push(qualifier_name_key)
     key_idx -= 4;
 
     for (let i = 0; i < 4; i++) {
@@ -41,8 +43,7 @@ for (let table = 0; table < 9; table++) {
                 mytable_r1_direct += " <td rowspan = \"4\">" + "Awaiting Result" + "</td>";
                 mytable_r1_direct += " <td rowspan = \"4\">" + "Awaiting Result" + "</td>";
             } else {
-                mytable_r1_direct += " <td rowspan = \"4\">" + players[qualifier_name_key].name + "</td>";
-
+                mytable_r1_direct += " <td rowspan = \"4\">" + players[qualifier_name_key].name.substring(1) + "</td>";
                 mytable_r1_direct += " <td rowspan = \"4\">\
                 <img class=\"screenshot\" src = \"screenshots/r1t" + (table + 1) + "g1.png\"><br>\
                 <img class=\"screenshot\"  src = \"screenshots/r1t" + (table + 1) + "g2.png\"></td>";
@@ -73,9 +74,30 @@ for (let table = 0; table < 9; table++) {
     }
     mytable_r1_direct += " </tr>";
 }
-
 mytable_r1_direct += "</table>";
-document.getElementById("round1").innerHTML = mytable_r1_direct;
+document.getElementById("round1R").innerHTML = mytable_r1_direct;
+
+
+var mytable_r1Q_direct = "<table><tr>";
+for (let idx = 0; idx < table_winner_keys.length; idx++) {
+    mytable_r1Q_direct += "<Td>";
+    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[table_winner_keys[idx]].name + ".png\">";
+    mytable_r1Q_direct += "<br><b>";
+    mytable_r1Q_direct += players[table_winner_keys[idx]].name.substring(1);;
+    mytable_r1Q_direct += "</b><br>Table " + (1 + idx);
+    mytable_r1Q_direct += "<br><b>";
+    mytable_r1Q_direct += (players[table_winner_keys[idx]].Score_round1game1 + players[table_winner_keys[idx]].Score_round1game2);
+    mytable_r1Q_direct += "</b></Td>";
+}
+mytable_r1Q_direct += "</tr><tr><td></td>";
+for (let idx = 10; idx <= 16; idx++) {
+    mytable_r1Q_direct += "<Td>Top Score ";
+    mytable_r1Q_direct += "<br>Winner" + idx + "</Td>";
+}
+mytable_r1Q_direct += "<td></td></tr></table>";
+document.getElementById("round2Q").innerHTML = mytable_r1Q_direct;
+
+
 
 
 let avatars = "";

@@ -1,5 +1,9 @@
+body {
+    text-align: center;
+}
+
 div {
-    border: 2px solid red;
+    border: 2px solid gray;
 }
 
 th {
@@ -24,4 +28,23 @@ img.screenshot {
 
 img.avators {
     width: 100px;
+}
+
+div.header {
+    margin: auto;
+    width: 900px;
+}
+
+div.table_container {
+    margin: auto;
+    width: 1200px;
+}
+
+div#round2Q {
+    margin: auto;
+    width: 900px;
+}
+
+.header img {
+    height: 500px;
 }
