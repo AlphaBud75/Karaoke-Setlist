@@ -32,8 +32,6 @@ for (let table = 0; table < 9; table++) {
             "<td>\
             <img class=\"avators\"  src = \"avators/" +
             players[Splayer_key].name + ".png\">\
-            <img class=\"avators\"  src = \"avators/" +
-            players[Splayer_key].name + ".gif\">\
             </td>" +
             "<td>" + players[Splayer_key].name + "</td>" +
             " <td>" + players[Splayer_key].Score_round1game1 + "</td>" +
