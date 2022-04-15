@@ -1,0 +1,19 @@
+div {
+    border: 2px solid red;
+}
+
+th {
+    text-align: left;
+}
+
+tbody th {
+    border-bottom: 1px solid;
+    padding-top: .625rem;
+}
+
+th,
+tr,
+tbody,
+td {
+    border: 1px solid green;
+}

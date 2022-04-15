@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="treant-js-master/Treant.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen">
+
+
+    <title>mahjong tournament</title>
+</head>
+
+<body>
+    asdf
+
+
+    <table>
+        <th>
+            <div class=" round1 " id="round1_table1 "> r1t1 </div>
+            <div class="round1 " id="round1_table2 "> r1t2 </div>
+            <div class="round1 " id="round1_table3 "> r1t3 </div>
+            <div class="round1 " id="round1_table4 "> r1t4 </div>
+            <div class="round1 " id="round1_table5 "> r1t5 </div>
+            <div class="round1 " id="round1_table6 "> r1t6 </div>
+            <div class="round1 " id="round1_table7 "> r1t7 </div>
+            <div class="round1 " id="round1_table8 "> r1t8 </div>
+            <div class="round1 " id="round1_table9 "> r1t9 </div>
+        </th>
+        <th> semifinals
+            <div class="round2 " id="round2_table1 "> r2t1 </div>
+            <div class="round2 " id="round2_table2 "> r2t2 </div>
+            <div class="round2 " id="round2_table3 "> r2t3 </div>
+            <div class="round2 " id="round2_table4 "> r2t4 </div>
+        </th>
+        <th> finals
+            <div class="round3 " id="round3_table1 "> r3t1 </div>
+        </th>
+    </table>
+
+    <p id="test"></p>
+
+    <div class="chart" id="OrganiseChart6"></div>
+
+    <script src="treant-js-master/vendor/raphael.js"></script>
+    <script src="treant-js-master/Treant.js"></script>
+    <script src="results.js"></script>
+
+    <script src="tree.js"></script>
+    <script>
+        new Treant(tree_structure);
+    </script>
+</body>
+
+</html>
