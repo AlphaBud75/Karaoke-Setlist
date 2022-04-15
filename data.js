@@ -5,7 +5,8 @@ const players = {
         Score_round1game1: 49300,
         Score_round1game2: 59500,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "mu": {
         name: "@MugList",
@@ -13,7 +14,8 @@ const players = {
         Score_round1game1: 15500,
         Score_round1game2: 1400,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "cr": {
         name: "@Crono",
@@ -21,7 +23,8 @@ const players = {
         Score_round1game1: 15200,
         Score_round1game2: 40100,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "ex": {
         name: "@Explode Riajuus",
@@ -29,7 +32,8 @@ const players = {
         Score_round1game1: 20000,
         Score_round1game2: -1000,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 
     "do": {
@@ -38,7 +42,8 @@ const players = {
         Score_round1game1: 38700,
         Score_round1game2: 8700,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "mo": {
         name: "@Moojo",
@@ -46,7 +51,8 @@ const players = {
         Score_round1game1: 35400,
         Score_round1game2: 13700,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "sn": {
         name: "@SnowBunny",
@@ -54,7 +60,8 @@ const players = {
         Score_round1game1: 30700,
         Score_round1game2: 41900,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "zi": {
         name: "@Zisos",
@@ -62,40 +69,45 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 35700,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: "round1 game1 by AI"
     },
 
     "vi": {
         name: "@Vince the Minced",
         table: 3,
-        Score_round1game1: 0,
+        Score_round1game1: 26700,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "bl": {
         name: "@blurr -",
         table: 3,
-        Score_round1game1: 0,
+        Score_round1game1: 9600,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "pr": {
         name: "@Proph",
         table: 3,
-        Score_round1game1: 0,
+        Score_round1game1: 27000,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "ju": {
         name: "@Just Bitter",
         table: 3,
-        Score_round1game1: 0,
+        Score_round1game1: 36700,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 
     "my": {
@@ -104,7 +116,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "ph": {
         name: "@PhinAgain",
@@ -112,7 +125,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "ze": {
         name: "@Zer0Pendragon6",
@@ -120,7 +134,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "fr": {
         name: "@Frank",
@@ -128,7 +143,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 
     "wi": {
@@ -137,7 +153,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "pe": {
         name: "@Peaches",
@@ -145,7 +162,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "gr": {
         name: "@Griev, the Resident Weeb",
@@ -153,7 +171,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "sm": {
         name: "@Smug",
@@ -161,7 +180,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 
     "us": {
@@ -170,7 +190,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "sl": {
         name: "@Slydralix",
@@ -178,7 +199,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "kj": {
         name: "@KJTx(•ᴗ•)",
@@ -186,7 +208,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "sh": {
         name: "@Shingin",
@@ -194,7 +217,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 
     "wa": {
@@ -203,7 +227,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "at": {
         name: "@Arkteezy | no chaos spoilers",
@@ -211,7 +236,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "re": {
         name: "@remy fool",
@@ -219,7 +245,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "dr": {
         name: "@DrSuccessful",
@@ -227,7 +254,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 
     "as": {
@@ -236,7 +264,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "gb": {
         name: "@grullborg",
@@ -244,7 +273,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "po": {
         name: "@Poi~",
@@ -252,7 +282,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "ck": {
         name: "@Crimson Kaaru",
@@ -260,7 +291,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 
     "az": {
@@ -269,7 +301,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "ap": {
         name: "@Apple Thapperson",
@@ -277,7 +310,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "al": {
         name: "@あlphあβud",
@@ -285,7 +319,8 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
     "e": {
         name: "@e",
@@ -293,6 +328,7 @@ const players = {
         Score_round1game1: 0,
         Score_round1game2: 0,
         Score_round2: 0,
-        Score_round3: 0
+        Score_round3: 0,
+        misc: null
     },
 }
