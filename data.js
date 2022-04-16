@@ -125,7 +125,7 @@ const players = {
     "my": {
         name: "@Myrrh",
         round1_table: 4,
-        Score_round1game1: "78800",
+        Score_round1game1: 78800,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -135,7 +135,7 @@ const players = {
     "ph": {
         name: "@PhinAgain",
         round1_table: 4,
-        Score_round1game1: "11700",
+        Score_round1game1: 11700,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -145,7 +145,7 @@ const players = {
     "ze": {
         name: "@Zer0Pendragon6",
         round1_table: 4,
-        Score_round1game1: "12000",
+        Score_round1game1: 12000,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -155,7 +155,7 @@ const players = {
     "fr": {
         name: "@Frank",
         round1_table: 4,
-        Score_round1game1: "-2500",
+        Score_round1game1: -2500,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -166,7 +166,7 @@ const players = {
     "wi": {
         name: "@wiley",
         round1_table: 5,
-        Score_round1game1: "45200",
+        Score_round1game1: 45200,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -176,7 +176,7 @@ const players = {
     "pe": {
         name: "@Peaches",
         round1_table: 5,
-        Score_round1game1: "14600",
+        Score_round1game1: 14600,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -186,7 +186,7 @@ const players = {
     "gr": {
         name: "@Griev, the Resident Weeb",
         round1_table: 5,
-        Score_round1game1: "26700",
+        Score_round1game1: 26700,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -196,7 +196,7 @@ const players = {
     "sm": {
         name: "@Smug",
         round1_table: 5,
-        Score_round1game1: "13500",
+        Score_round1game1: 13500,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -217,8 +217,8 @@ const players = {
     "sl": {
         name: "@Slydralix",
         round1_table: 6,
-        Score_round1game1: "18600",
-        Score_round1game2: "7700",
+        Score_round1game1: 18600,
+        Score_round1game2: 7700,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -228,7 +228,7 @@ const players = {
         name: "@KJTx(•ᴗ•)",
         round1_table: 6,
         Score_round1game1: "",
-        Score_round1game2: "69700",
+        Score_round1game2: 69700,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -237,8 +237,8 @@ const players = {
     "sh": {
         name: "@Shingin",
         round1_table: 6,
-        Score_round1game1: "55700",
-        Score_round1game2: "18800",
+        Score_round1game1: 55700,
+        Score_round1game2: 18800,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -248,7 +248,7 @@ const players = {
     "wa": {
         name: "@Waluiino",
         round1_table: 7,
-        Score_round1game1: "21300",
+        Score_round1game1: 21300,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -258,7 +258,7 @@ const players = {
     "at": {
         name: "@Arkteezy",
         round1_table: 7,
-        Score_round1game1: "26300",
+        Score_round1game1: 26300,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -268,7 +268,7 @@ const players = {
     "re": {
         name: "@remy fool",
         round1_table: 7,
-        Score_round1game1: "33400",
+        Score_round1game1: 33400,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -278,7 +278,7 @@ const players = {
     "dr": {
         name: "@DrSuccessful",
         round1_table: 7,
-        Score_round1game1: "19000",
+        Score_round1game1: 19000,
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
