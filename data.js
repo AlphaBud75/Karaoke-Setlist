@@ -248,7 +248,7 @@ const players = {
     "wa": {
         name: "@Waluiino",
         round1_table: 7,
-        Score_round1game1: "",
+        Score_round1game1: "21300",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -258,7 +258,7 @@ const players = {
     "at": {
         name: "@Arkteezy | no chaos spoilers",
         round1_table: 7,
-        Score_round1game1: "",
+        Score_round1game1: "26300",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -268,7 +268,7 @@ const players = {
     "re": {
         name: "@remy fool",
         round1_table: 7,
-        Score_round1game1: "",
+        Score_round1game1: "33400",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -278,7 +278,7 @@ const players = {
     "dr": {
         name: "@DrSuccessful",
         round1_table: 7,
-        Score_round1game1: "",
+        Score_round1game1: "19000",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
