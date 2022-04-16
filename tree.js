@@ -82,11 +82,12 @@ mytable_r1_direct += "</table>";
 document.getElementById("round1R").innerHTML = mytable_r1_direct;
 
 
-if (length(round1_table_winner_keys) < 9) {
-    var top_n = length(round1_table_winner_keys) + 7;
+if (round1_table_winner_keys.size < 9) {
+    var top_n = round1_table_winner_keys.size + 7;
 } else {
     var top_n = 16;
 }
+console.log(round1_table_winner_keys.size);
 // console.log(round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse());
 round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse();
 // console.log(round1_sums.slice(0, 9));
