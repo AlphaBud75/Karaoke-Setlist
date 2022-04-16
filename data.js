@@ -259,7 +259,7 @@ const players = {
         name: "@Arkteezy",
         round1_table: 7,
         Score_round1game1: 26300,
-        Score_round1game2: "25400",
+        Score_round1game2: 25400,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
