@@ -15,7 +15,11 @@ tbody th {
     padding-top: .625rem;
 }
 
-th,
+th {
+    text-align: center;
+    border: 3px solid blue;
+}
+
 tr,
 tbody,
 td {
