@@ -54,12 +54,21 @@ for (let i_table = 0; i_table < 9; i_table++) {
             }
         }
 
-        mytable_r1_direct += "<tr>" +
-            // "<td>" + "?avatar " + players[Splayer_key].name + "</td>" +
-            "<td>\
+        if (!["ph", "at", "ck", "az"].includes(Splayer_key)) {
+            mytable_r1_direct += "<tr>" +
+                // "<td>" + "?avatar " + players[Splayer_key].name + "</td>" +
+                "<td>\
             <img class=\"avators\"  src = \"avators/" +
-            players[Splayer_key].name + ".png\">\
+                players[Splayer_key].name + ".png\">\
             </td>";
+        } else {
+            mytable_r1_direct += "<tr>" +
+                // "<td>" + "?avatar " + players[Splayer_key].name + "</td>" +
+                "<td>\
+        <img class=\"avators\"  src = \"avators/" +
+                players[Splayer_key].name + ".gif\">\
+        </td>";
+        }
         if (Splayer_key == qualifier_name_key && qualifier_highscore != 0) {
             mytable_r1_direct +=
                 "<td><h2>" + players[Splayer_key].name + "</h2></td>" +

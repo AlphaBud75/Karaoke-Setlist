@@ -212,13 +212,13 @@ const players = {
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
-        misc: "round 1 muglist filled"
+        misc: "round 1 muglist filled, round 2 Jo filled"
     },
     "sl": {
         name: "@Slydralix",
         round1_table: 6,
         Score_round1game1: "18600",
-        Score_round1game2: "",
+        Score_round1game2: "7700",
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -228,7 +228,7 @@ const players = {
         name: "@KJTx(•ᴗ•)",
         round1_table: 6,
         Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game2: "69700",
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -238,7 +238,7 @@ const players = {
         name: "@Shingin",
         round1_table: 6,
         Score_round1game1: "55700",
-        Score_round1game2: "",
+        Score_round1game2: "18800",
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -256,7 +256,7 @@ const players = {
         misc: ""
     },
     "at": {
-        name: "@Arkteezy | no chaos spoilers",
+        name: "@Arkteezy",
         round1_table: 7,
         Score_round1game1: "26300",
         Score_round1game2: "",
