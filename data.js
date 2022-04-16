@@ -166,7 +166,7 @@ const players = {
     "wi": {
         name: "@wiley",
         round1_table: 5,
-        Score_round1game1: "",
+        Score_round1game1: "45200",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -176,7 +176,7 @@ const players = {
     "pe": {
         name: "@Peaches",
         round1_table: 5,
-        Score_round1game1: "",
+        Score_round1game1: "14600",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -186,7 +186,7 @@ const players = {
     "gr": {
         name: "@Griev, the Resident Weeb",
         round1_table: 5,
-        Score_round1game1: "",
+        Score_round1game1: "26700",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -196,7 +196,7 @@ const players = {
     "sm": {
         name: "@Smug",
         round1_table: 5,
-        Score_round1game1: "",
+        Score_round1game1: "13500",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
