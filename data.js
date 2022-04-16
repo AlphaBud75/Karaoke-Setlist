@@ -330,8 +330,8 @@ const players = {
     "az": {
         name: "@Arkazu",
         round1_table: 9,
-        Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game1: 59300,
+        Score_round1game2: 32500,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -340,8 +340,8 @@ const players = {
     "ap": {
         name: "@Apple Thapperson",
         round1_table: 9,
-        Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game1: 10700,
+        Score_round1game2: 16400,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -350,8 +350,8 @@ const players = {
     "al": {
         name: "@あlphあβud",
         round1_table: 9,
-        Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game1: 19200,
+        Score_round1game2: 2100,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -360,8 +360,8 @@ const players = {
     "e": {
         name: "@e",
         round1_table: 9,
-        Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game1: 10800,
+        Score_round1game2: 49000,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",

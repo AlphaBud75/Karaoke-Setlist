@@ -94,7 +94,8 @@ document.getElementById("round1R").innerHTML = mytable_r1_direct;
 if (round1_table_winner_keys.size < 9) {
     var top_n = round1_table_winner_keys.size + 7;
 } else {
-    var top_n = 16;
+    console.log("9table ready");
+    var top_n = 17;
 }
 console.log("round1_table_winner_keys.size", round1_table_winner_keys.size);
 // console.log(round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse());
@@ -164,12 +165,12 @@ document.getElementById("round2Q").innerHTML = mytable_r1Q_direct;
 
 
 var mytable_r2R = "<table>";
-document.getElementById("round2R").innerHTML = mytable_r2R;
+// document.getElementById("round2R").innerHTML = mytable_r2R;
 
 
 var mytable_r3Q = "<table>";
-document.getElementById("round3Q").innerHTML = mytable_r3Q;
+// document.getElementById("round3Q").innerHTML = mytable_r3Q;
 
 
 var mytable_r3R = "<table>";
-document.getElementById("round3R").innerHTML = mytable_r3R;
+// document.getElementById("round3R").innerHTML = mytable_r3R;
