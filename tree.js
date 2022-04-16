@@ -38,7 +38,7 @@ for (let i_table = 0; i_table < 9; i_table++) {
     for (let i_player = 0; i_player < 4; i_player++) {
         let Splayer_key = pkey();
         let game1_2sum = (players[Splayer_key].Score_round1game1 + players[Splayer_key].Score_round1game2);
-        console.log(typeof game1_2sum);
+        // console.log(typeof game1_2sum);
         round1_sums.push(parseFloat(game1_2sum));
 
         if (i_player == 1) {
@@ -96,7 +96,7 @@ if (round1_table_winner_keys.size < 9) {
 } else {
     var top_n = 16;
 }
-console.log(round1_table_winner_keys.size);
+console.log("round1_table_winner_keys.size", round1_table_winner_keys.size);
 // console.log(round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse());
 round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse();
 // console.log(round1_sums.slice(0, 9));
@@ -104,36 +104,42 @@ while (round1_sums[top_n] == round1_sums[top_n + 1]) {
     top_n += 1
 }
 console.log(round1_sums.slice(0, top_n));
-nineth = round1_sums.slice(0, top_n).slice(-1);
-console.log(nineth);
-// console.log(round1_score_winner_keys);
 
 
-console.log(round1_table_winner_keys);
+console.log("round1_table_winner_keys", round1_table_winner_keys);
 for (let k of round1_table_winner_keys) {
-    console.log((players[k].Score_round1game1 + players[k].Score_round1game2));
+    // console.log((players[k].Score_round1game1 + players[k].Score_round1game2));
 }
 var mytable_r1Q_direct = "<table><th colspan = \"9\">Table Winners (9)</th><tr>";
 let idx = 1;
 for (let rtwk of round1_table_winner_keys) {
+    sum_g1g2 = (players[rtwk].Score_round1game1 + players[rtwk].Score_round1game2);
+    if (sum_g1g2 < round1_sums[9]) {
+        top_n -= 1;
+    }
     mytable_r1Q_direct += "<Td>";
-    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[rtwk].name + ".png\">";
+    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[rtwk].name + (!["ph", "at", "ck", "az"].includes(rtwk) ? ".png\">" : ".gif\">");
     mytable_r1Q_direct += "<br><b>";
     mytable_r1Q_direct += players[rtwk].name.substring(1);;
     mytable_r1Q_direct += "</b><br>Table " + players[rtwk].round1_table;
     mytable_r1Q_direct += "<br><b>";
-    mytable_r1Q_direct += (players[rtwk].Score_round1game1 + players[rtwk].Score_round1game2);
+    mytable_r1Q_direct += sum_g1g2;
     mytable_r1Q_direct += "</b></Td>";
 }
+
+console.log("round1_score_winner_keys", round1_score_winner_keys);
+console.log("top_n", top_n);
+console.log(round1_sums[top_n]);
+
 mytable_r1Q_direct += "</tr><th colspan = \"9\">Score Winners (7) (live update)</th><tr><td></td>";
 for (let k of round1_score_winner_keys) {
-    players[k].Score_round1game1 + players[k].Score_round1game2 < nineth && round1_score_winner_keys.delete(k);
+    players[k].Score_round1game1 + players[k].Score_round1game2 <= round1_sums[top_n] && round1_score_winner_keys.delete(k);
 }
 console.log(round1_score_winner_keys);
 for (let rswk of round1_score_winner_keys) {
-    console.log((players[rswk].Score_round1game1 + players[rswk].Score_round1game2));
+    // console.log((players[rswk].Score_round1game1 + players[rswk].Score_round1game2));
     mytable_r1Q_direct += "<Td>";
-    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[rswk].name + ".png\">";
+    mytable_r1Q_direct += "<img class=\"avators\"  src = \"avators/" + players[rswk].name + (!["ph", "at", "ck", "az"].includes(rswk) ? ".png\">" : ".gif\">");
     mytable_r1Q_direct += "<br><b>";
     mytable_r1Q_direct += players[rswk].name.substring(1);;
     mytable_r1Q_direct += "</b><br>Table " + players[rswk].round1_table;
@@ -153,3 +159,17 @@ document.getElementById("round2Q").innerHTML = mytable_r1Q_direct;
 //     avatars += "?avatar " + (players[key].name) + "\n";
 // }
 // // console.log(avatars)
+
+
+
+
+var mytable_r2R = "<table>";
+document.getElementById("round2R").innerHTML = mytable_r2R;
+
+
+var mytable_r3Q = "<table>";
+document.getElementById("round3Q").innerHTML = mytable_r3Q;
+
+
+var mytable_r3R = "<table>";
+document.getElementById("round3R").innerHTML = mytable_r3R;

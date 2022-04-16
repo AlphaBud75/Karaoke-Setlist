@@ -259,7 +259,7 @@ const players = {
         name: "@Arkteezy",
         round1_table: 7,
         Score_round1game1: 26300,
-        Score_round1game2: "25400",
+        Score_round1game2: 25400,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -289,8 +289,8 @@ const players = {
     "as": {
         name: "@Azure🌟 Star",
         round1_table: 8,
-        Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game1: 25900,
+        Score_round1game2: 1400,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -299,8 +299,8 @@ const players = {
     "gb": {
         name: "@grullborg",
         round1_table: 8,
-        Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game1: 29100,
+        Score_round1game2: 41600,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -309,8 +309,8 @@ const players = {
     "po": {
         name: "@Poi~",
         round1_table: 8,
-        Score_round1game1: "",
-        Score_round1game2: "",
+        Score_round1game1: 46400,
+        Score_round1game2: 60400,
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
@@ -324,7 +324,7 @@ const players = {
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
-        misc: ""
+        misc: "round1 game1 & game 2 played by AI"
     },
 
     "az": {
