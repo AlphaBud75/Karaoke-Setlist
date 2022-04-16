@@ -5,6 +5,7 @@ const players = {
         Score_round1game1: 49300,
         Score_round1game2: 59500,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -14,6 +15,7 @@ const players = {
         Score_round1game1: 15500,
         Score_round1game2: 1400,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -23,6 +25,7 @@ const players = {
         Score_round1game1: 15200,
         Score_round1game2: 40100,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -32,6 +35,7 @@ const players = {
         Score_round1game1: 20000,
         Score_round1game2: -1000,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -42,6 +46,7 @@ const players = {
         Score_round1game1: 38700,
         Score_round1game2: 8700,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -51,6 +56,7 @@ const players = {
         Score_round1game1: 35400,
         Score_round1game2: 13700,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -60,6 +66,7 @@ const players = {
         Score_round1game1: 30700,
         Score_round1game2: 41900,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -69,6 +76,7 @@ const players = {
         Score_round1game1: -4800,
         Score_round1game2: 35700,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: "round1 game1 by AI"
     },
@@ -79,6 +87,7 @@ const players = {
         Score_round1game1: 26700,
         Score_round1game2: 14800,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -88,6 +97,7 @@ const players = {
         Score_round1game1: 9600,
         Score_round1game2: -10200,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -97,6 +107,7 @@ const players = {
         Score_round1game1: 27000,
         Score_round1game2: 46500,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -106,6 +117,7 @@ const players = {
         Score_round1game1: 36700,
         Score_round1game2: 48900,
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -116,6 +128,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -125,6 +138,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -134,6 +148,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -143,6 +158,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -153,6 +169,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -162,6 +179,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -171,6 +189,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -180,6 +199,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -190,6 +210,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -199,6 +220,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -208,6 +230,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -217,6 +240,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -227,6 +251,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -236,6 +261,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -245,6 +271,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -254,6 +281,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -264,6 +292,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -273,6 +302,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -282,6 +312,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -291,6 +322,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -301,6 +333,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -310,6 +343,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -319,6 +353,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
@@ -328,6 +363,7 @@ const players = {
         Score_round1game1: "",
         Score_round1game2: "",
         Score_round2: "",
+        round2_table: "",
         Score_round3: "",
         misc: ""
     },
