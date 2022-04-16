@@ -125,7 +125,7 @@ const players = {
     "my": {
         name: "@Myrrh",
         round1_table: 4,
-        Score_round1game1: "",
+        Score_round1game1: "78800",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -135,7 +135,7 @@ const players = {
     "ph": {
         name: "@PhinAgain",
         round1_table: 4,
-        Score_round1game1: "",
+        Score_round1game1: "11700",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -145,7 +145,7 @@ const players = {
     "ze": {
         name: "@Zer0Pendragon6",
         round1_table: 4,
-        Score_round1game1: "",
+        Score_round1game1: "12000",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -155,7 +155,7 @@ const players = {
     "fr": {
         name: "@Frank",
         round1_table: 4,
-        Score_round1game1: "",
+        Score_round1game1: "-2500",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
