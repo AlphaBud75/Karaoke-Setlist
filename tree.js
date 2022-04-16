@@ -3,7 +3,6 @@ var round1_table_winner_keys = new Set();
 var round1_score_winner_keys = new Set(player_keys);
 var round1_sums = [-999999];
 
-
 let key_idx = 0;
 
 function pkey() { //return_player_name_byOrder
@@ -83,8 +82,11 @@ mytable_r1_direct += "</table>";
 document.getElementById("round1R").innerHTML = mytable_r1_direct;
 
 
-
-var top_n = 10;
+if (length(round1_table_winner_keys) < 9) {
+    var top_n = length(round1_table_winner_keys) + 7;
+} else {
+    var top_n = 16;
+}
 // console.log(round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse());
 round1_sums.sort(function(a, b) { return a > b ? 1 : -1 }).reverse();
 // console.log(round1_sums.slice(0, 9));
@@ -135,21 +137,7 @@ document.getElementById("round2Q").innerHTML = mytable_r1Q_direct;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// // Script that gets you banned in Discord
 // let avatars = "";
 // for (let key in players) {
 //     avatars += "?avatar " + (players[key].name) + "\n";
