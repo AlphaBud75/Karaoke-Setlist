@@ -212,12 +212,12 @@ const players = {
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
-        misc: ""
+        misc: "round 1 muglist filled"
     },
     "sl": {
         name: "@Slydralix",
         round1_table: 6,
-        Score_round1game1: "",
+        Score_round1game1: "18600",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
@@ -232,12 +232,12 @@ const players = {
         Score_round2: "",
         round2_table: "",
         Score_round3: "",
-        misc: ""
+        misc: "round 1 apple filled"
     },
     "sh": {
         name: "@Shingin",
         round1_table: 6,
-        Score_round1game1: "",
+        Score_round1game1: "55700",
         Score_round1game2: "",
         Score_round2: "",
         round2_table: "",
