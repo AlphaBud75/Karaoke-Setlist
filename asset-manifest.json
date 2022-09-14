@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ethyria-1yr-react/static/css/main.878080e1.css",
+    "main.js": "/ethyria-1yr-react/static/js/main.034fb7ad.js",
+    "static/js/787.21e13425.chunk.js": "/ethyria-1yr-react/static/js/787.21e13425.chunk.js",
+    "static/media/header.png": "/ethyria-1yr-react/static/media/header.cad6ae92d00e18db9083.png",
+    "static/media/ETHYRIA_BG-01.png": "/ethyria-1yr-react/static/media/ETHYRIA_BG-01.e682ea2947df1b0a1da3.png",
+    "static/media/section-happy.png": "/ethyria-1yr-react/static/media/section-happy.dea04e64880eb28f0c51.png",
+    "index.html": "/ethyria-1yr-react/index.html",
+    "main.878080e1.css.map": "/ethyria-1yr-react/static/css/main.878080e1.css.map",
+    "main.034fb7ad.js.map": "/ethyria-1yr-react/static/js/main.034fb7ad.js.map",
+    "787.21e13425.chunk.js.map": "/ethyria-1yr-react/static/js/787.21e13425.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.878080e1.css",
+    "static/js/main.034fb7ad.js"
+  ]
+}
